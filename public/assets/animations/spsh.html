@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tests</title>
+    <style>
+        
+        .attackSpSh {
+            height: 215px;
+            width: 203px;
+            background-image: url('attack.png');
+            animation: attackplay 0.8s steps(4) infinite;
+        }
+        
+        @keyframes attackplay {
+		   0% { background-position: 0px 0px; }
+		   33% { background-position: -812px 0px; }
+		   
+		   33.001% { background-position: 0px -215px; }
+		   66% { background-position: -812px -215px; }
+		   
+		   66.001% { background-position: 0px -430px; }
+		   100% { background-position: -812px -430px; }
+		   
+		}
+        
+        
+        .attackUpSpSh {
+            height: 200px;
+            width: 221px;
+            background-image: url('attackup.png');
+            animation: attackupplay 1s steps(7) infinite;
+        }
+        
+        @keyframes attackupplay {
+		   0% { background-position: 0px 0px; }
+		   33% { background-position: -1547px 0px; }
+		   
+		   33.001% { background-position: 0px -200px; }
+		   66% { background-position: -1547px -200px; }
+		   
+		   66.001% { background-position: 0px -400px; }
+		   100% { background-position: -1547px -400px; }
+		   
+		}
+        
+        .healthUpSpSh {
+            height: 222px;
+            width: 122px;
+            background-image: url('healthup.png');
+            animation: healthupplay 0.7s steps(12) infinite;
+        }
+        
+        @keyframes healthupplay {
+		   0% { background-position: 0px 0px; }
+		   100% { background-position: -1500px 0px; }
+		   
+		}
+        
+      
+    </style>
+</head>
+<body>
+  
+   <div class=attackSpSh></div>
+   <div class=attackUpSpSh></div>
+   <div class=healthUpSpSh></div>
+   
+</body>
+</html>

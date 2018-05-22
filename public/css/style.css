@@ -1,0 +1,2884 @@
+/*limit scroll once elements are in place with overflow -y hidden*/
+
+
+/*Menu screens*/
+
+#parallax {
+    -webkit-perspective: 1px;
+    perspective: 1px;
+    -webkit-perspective-origin: center;
+    perspective-origin: center;
+    overflow-y: hidden;
+    /* Change this from auto to hide for scroll */
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#container1 {
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    overflow:hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-box-shadow: 10px 10px 5px #888888;
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 10px;
+    -webkit-animation: bgchange infinite;
+    animation: bgchange infinite;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    font-size: 36pt;
+}
+
+#logo {
+    -webkit-transform: translateZ(.15px) scale(.5) translateY(0vh) translateX(0vw);
+    transform: translateZ(.15px) scale(.5) translateY(0vh) translateX(0vw);
+    z-index: 100;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+}
+
+#logoImg {
+    width: 45%;
+}
+
+
+/*Main Menu*/
+
+#startBtn p {
+    -webkit-transform: translateZ(.15px) scale(.5) translateY(0vh) translateX(0vw);
+    transform: translateZ(.15px) scale(.5) translateY(0vh) translateX(0vw);
+    z-index: 100;
+    bottom: 10vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    position: absolute;
+    -webkit-animation: startGlow 2s infinite;
+    animation: startGlow 2s infinite;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#header img {
+    width: 30%;
+    left: 0;
+    right: 0;
+    bottom: 1450px;
+    margin: auto;
+    height: auto;
+    position: absolute;
+}
+
+#scrollHere {
+    width: auto;
+    left: 0;
+    right: 0;
+    bottom: 1800px;
+    margin: auto;
+    position: absolute;
+    height: auto;
+}
+
+#mMenu {
+    text-align: center;
+    width: 35%;
+    left: 0;
+    right: 0;
+    bottom: 900px;
+    margin: auto;
+    position: absolute;
+    height: auto;
+}
+
+#mMenu img {
+    width: 100%;
+}
+
+#signIn img {
+    width: 200px;
+    left: 0;
+    right: 0;
+    bottom: 350px;
+    margin: auto;
+    position: absolute;
+    cursor: pointer;
+}
+
+#mMaking img {
+    width: 200px;
+    left: 0;
+    right: 0;
+    bottom: 300px;
+    margin: auto;
+    position: absolute;
+}
+
+#back1 img {
+    left: 0;
+    right: 0;
+    bottom: 150px;
+    margin: auto;
+    position: absolute;
+    width: 200px;
+}
+
+#signIn img:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#mMaking img:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#back1 img:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+
+/*login Menu*/
+
+#menuB {
+    display: none;
+}
+
+#tutorialGif img {
+    position: absolute;
+    margin: auto;
+    top: 20%;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: auto;
+}
+
+#back2 img {
+    left: 0;
+    right: 0;
+    bottom: 160px;
+    margin: auto;
+    position: absolute;
+    width: 35%;
+}
+
+#sub1 img {
+    right: 70px;
+    margin: auto;
+    position: absolute;
+    width: 35%;
+    bottom: 160px;
+}
+
+#back2 img:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#sub1 img:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+
+/*Matchmaking Menu*/
+
+#menuC {
+    display: none;
+}
+
+#join1 img {
+    left: 0;
+    right: 0;
+    top: 100px;
+    margin: auto;
+    position: absolute;
+    width: 200px;
+}
+
+#host1 img {
+    left: 0;
+    right: 0;
+    top: 150px;
+    margin: auto;
+    position: absolute;
+    width: 200px;
+}
+
+#back3 img {
+    left: 0;
+    right: 0;
+    top: 260px;
+    margin: auto;
+    position: absolute;
+    width: 200px;
+}
+
+#join1 img:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#host1 img:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#back3 img:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+
+/*join Menu*/
+
+#jMenu {
+    display: none;
+    width: 45%;
+    left: 0;
+    right: 0;
+    bottom: 890px;
+    margin: auto;
+    position: absolute;
+    height: auto;
+}
+
+#jMenu img {
+    width: 100%;
+}
+
+#back4 img {
+    left: 70px;
+    bottom: 140px;
+    margin: auto;
+    position: absolute;
+    width: 30%;
+}
+
+#join2 img {
+    right: 70px;
+    margin: auto;
+    position: absolute;
+    width: 30%;
+    bottom: 140px;
+}
+
+#back4 img:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#join2 img:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+
+/*Host game page*/
+
+#hMenu {
+    display: none;
+    width: 35%;
+    left: 0;
+    right: 0;
+    bottom: 900px;
+    margin: auto;
+    position: absolute;
+    height: auto;
+}
+
+#hMenu img {
+    width: 100%;
+}
+
+#host2 img {
+    right: 70px;
+    margin: auto;
+    position: absolute;
+    width: 32%;
+    bottom: 160px;
+}
+
+#back5 img {
+    left: 70px;
+    bottom: 160px;
+    margin: auto;
+    position: absolute;
+    width: 32%;
+}
+
+#subHeader2 img {
+    left: 0;
+    right: 0;
+    top: 70px;
+    margin: auto;
+    position: absolute;
+    width: 60%;
+}
+
+#host2 img:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#back5 img:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#inputDiv {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 150px;
+    left: 0;
+    right: 0;
+    background-image: url("../img/buttonarea.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 15%;
+    -webkit-transform: scale(.7);
+    -ms-transform: scale(.7);
+    transform: scale(.7);
+}
+
+#inputDiv input {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: 40%;
+    font-size: 36pt;
+}
+
+
+/*character select screen*/
+
+#charMenu {
+    display: none;
+    width: auto;
+    left: 0;
+    right: 0;
+    bottom: 800px;
+    margin: auto;
+    position: absolute;
+    height: auto;
+}
+
+#lightBox {
+    width: 400px;
+    left: 80px;
+    bottom: 140px;
+    margin: auto;
+    position: absolute;
+    height: auto;
+}
+
+#lightBox img:hover {
+    -webkit-filter: drop-shadow(0px 0px 30px #ffffff);
+    filter: drop-shadow(0px 0px 30px #ffffff);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#lightBox img {
+    width: 100%;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+#darkBox {
+    width: 400px;
+    right: 80px;
+    bottom: 140px;
+    margin: auto;
+    position: absolute;
+    height: auto;
+}
+
+#darkBox img {
+    width: 100%;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+#darkBox img:hover {
+    -webkit-filter: drop-shadow(0px 0px 30px #000000);
+    filter: drop-shadow(0px 0px 30px #000000);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#menuDBox {
+    width: 250px;
+    left: 0;
+    right: 0;
+    bottom: 110px;
+    margin: auto;
+    position: absolute;
+    height: auto;
+}
+
+#menuDBox img {
+    width: 100%;
+}
+
+#readyP img {
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    width: 150px;
+    bottom: 200px;
+}
+
+#back6 img {
+    left: 0;
+    right: 0;
+    bottom: 150px;
+    margin: auto;
+    position: absolute;
+    width: 150px;
+}
+
+#readyP img:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#back6 img:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+
+/*Start Screen Background*/
+
+#city1 {
+    position: absolute;
+    -webkit-transform: translateZ(.25px) scale(.75) translateY(-40vh);
+    transform: translateZ(.25px) scale(.75) translateY(-40vh);
+    width: 100%;
+}
+
+#city1Img {
+    width: 100%;
+}
+
+#city2 {
+    position: absolute;
+    -webkit-transform: translateZ(0px) scale(1) translateY(-1vh);
+    transform: translateZ(0px) scale(1) translateY(-1vh);
+    width: 100%;
+}
+
+#city2Img {
+    width: 100%;
+}
+
+#city3 {
+    position: absolute;
+    -webkit-transform: translateZ(-.25px) scale(1.25) translateY(10vh);
+    transform: translateZ(-.25px) scale(1.25) translateY(10vh);
+    width: 100%;
+}
+
+#city3Img {
+    width: 100%;
+}
+
+#city4 {
+    position: absolute;
+    -webkit-transform: translateZ(-.5px) scale(1.5) translateY(40vh);
+    transform: translateZ(-.5px) scale(1.5) translateY(40vh);
+    width: 100%;
+}
+
+#city4Img {
+    width: 100%;
+}
+
+#city5 {
+    position: absolute;
+    -webkit-transform: translateZ(-.75px) scale(1.75) translateY(35vh);
+    transform: translateZ(-.75px) scale(1.75) translateY(35vh);
+    width: 100%;
+}
+
+#city5Img {
+    width: 100%;
+}
+
+
+/*animations*/
+
+@-webkit-keyframes bgchange {
+    0% {
+        background-color: #a4e3f5;
+    }
+    100% {
+        background-color: #397d91;
+    }
+}
+
+@keyframes bgchange {
+    0% {
+        background-color: #a4e3f5;
+    }
+    100% {
+        background-color: #397d91;
+    }
+}
+
+@-webkit-keyframes startGlow {
+    0% {
+        color: #ffffff;
+    }
+    100% {
+        color: rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes startGlow {
+    0% {
+        color: #ffffff;
+    }
+    100% {
+        color: rgba(0, 0, 0, 0);
+    }
+}
+
+
+/*Battlefield*/
+
+.lightCommanderDD {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background: transparent;
+    z-index: 100000;
+}
+
+.lightArcherDD {
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background: transparent;
+    z-index: 100000;
+}
+
+.lightSoldierDD {
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background: transparent;
+    z-index: 100000;
+}
+
+.lightDogDD {
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background: transparent;
+    z-index: 100000;
+}
+
+.darkCommanderDD {
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: transparent;
+    z-index: 100000;
+}
+
+.darkWizardDD {
+    width: 30%;
+    height: 40%;
+    position: absolute;
+    right: 20%;
+    bottom: 20%;
+    margin: auto;
+    background: transparent;
+    z-index: 100000;
+}
+
+.darkGruntDD {
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background: transparent;
+    z-index: 100000;
+}
+
+.darkDogDD {
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background: transparent;
+    z-index: 100000;
+}
+
+#menuContainer {
+    z-index: 10111;
+    position: absolute;
+    margin: auto;
+    height: 200px;
+    width: 400px;
+    left: 10px;
+    top: 10px;
+    background-size: cover;
+    background-image: url("../img/titlebox.svg");
+    display: none;
+}
+
+#menuBtn img {
+    z-index: 1011;
+    position: absolute;
+    margin: auto;
+    left: 140px;
+    top: 100px;
+    height: auto;
+    width: 15%;
+    display: block;
+}
+
+#menuBtn img:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#endTurnBtn img {
+    z-index: 1011;
+    position: absolute;
+    margin: auto;
+    left: 140px;
+    top: 150px;
+    height: auto;
+    width: 15%;
+    display: block;
+}
+
+#endTurnBtn img:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+.menuContBg {
+    z-index: 1011;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 36pt;
+    top: 40px;
+    font-family: Roboto;
+    color: #ffffff;
+}
+
+#back7 img {
+    left: 40px;
+    bottom: 50px;
+    margin: auto;
+    position: absolute;
+    width: 40%;
+}
+
+#back7 img:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#exitGame img {
+    right: 40px;
+    bottom: 50px;
+    margin: auto;
+    position: absolute;
+    width: 40%;
+}
+
+#exitGame img:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#container2 {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+#parallax2 {
+    -webkit-perspective: 1px;
+    perspective: 1px;
+    -webkit-perspective-origin: center;
+    perspective-origin: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: auto;
+    width: 110vw;
+    height: 110vh;
+    margin: auto;
+}
+
+#bg1 {
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 30vh;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    background-size: cover;
+    background-image: url("../img/battlefieldUI2.svg")
+}
+
+#charContainer {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 100vw;
+    z-index: 100000;
+}
+
+#lightArcher {
+    position: absolute;
+    width: 246px;
+    height: 202px;
+    -webkit-animation: lightArcherIdle 1.5s steps(9) infinite;
+    animation: lightArcherIdle 1.5s steps(9) infinite;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    margin: auto;
+    background-image: url("../img/lightSpriteSheet.png");
+    left: 150px;
+    bottom: 230px;
+}
+
+#lightArcher:hover {
+    opacity: .5;
+}
+
+#lightCommander {
+    position: absolute;
+    width: 310px;
+    height: 227px;
+    -webkit-animation: lightCommanderIdle 1.5s steps(8) infinite;
+    animation: lightCommanderIdle 1.5s steps(8) infinite;
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+    margin: auto;
+    background-image: url("../img/lightSpriteSheet.png");
+    left: -50px;
+    bottom: 300px;
+}
+
+#lightCommander:hover {
+    opacity: .5;
+}
+
+#lightDog {
+    position: absolute;
+    left: 520px;
+    width: 301px;
+    height: 129px;
+    -webkit-animation: lightDogIdle 1s steps(8) infinite;
+    animation: lightDogIdle 1s steps(8) infinite;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    margin: auto;
+    background-image: url("../img/lightSpriteSheet.png");
+    bottom: 210px;
+}
+
+#lightDog:hover {
+    opacity: .5;
+}
+
+#lightSoldier {
+    position: absolute;
+    width: 232px;
+    height: 207px;
+    -webkit-animation: lightSoldierIdle 1.5s steps(9) infinite;
+    animation: lightSoldierIdle 1.5s steps(9) infinite;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    margin: auto;
+    background-image: url("../img/lightSpriteSheet.png");
+    bottom: 220px;
+    left: 350px;
+}
+
+#lightSoldier:hover {
+    opacity: .5;
+}
+
+#darkCommander {
+    position: absolute;
+    width: 322px;
+    height: 338px;
+    -webkit-animation: darkCommanderIdle 1s steps(11) infinite;
+    animation: darkCommanderIdle 1s steps(11) infinite;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    margin: auto;
+    background-image: url("../img/darkSpriteSheet.png");
+    right: -50px;
+    bottom: 250px;
+}
+
+#darkCommander:hover {
+    opacity: .5;
+}
+
+#darkWizard {
+    position: absolute;
+    width: 227px;
+    height: 283px;
+    -webkit-animation: darkWizardIdle 1.3s steps(12) infinite;
+    animation: darkWizardIdle 1.3s steps(12) infinite;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    margin: auto;
+    background-image: url("../img/darkSpriteSheet.png");
+    right: 180px;
+    bottom: 230px;
+}
+
+#darkWizard:hover {
+    opacity: .5;
+}
+
+#darkDog {
+    position: absolute;
+    right: 550px;
+    margin: auto;
+    -webkit-transform: scale(.7);
+    -ms-transform: scale(.7);
+    transform: scale(.7);
+    background-image: url("../img/darkSpriteSheet.png");
+    bottom: 210px;
+    width: 162px;
+    height: 127px;
+    -webkit-animation: darkDogIdle 1s steps(10) infinite;
+    animation: darkDogIdle 1s steps(10) infinite;
+}
+
+#darkDog:hover {
+    opacity: .5;
+}
+
+#darkGrunt {
+    position: absolute;
+    width: 262px;
+    height: 242px;
+    -webkit-animation: darkGruntIdle 1.3s steps(9) infinite;
+    animation: darkGruntIdle 1.3s steps(9) infinite;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    margin: auto;
+    background-image: url("../img/darkSpriteSheet.png");
+    bottom: 200px;
+    right: 370px;
+}
+
+#darkGrunt:hover {
+    opacity: .5;
+}
+
+#bg2 {
+    position: absolute;
+    -webkit-transform: translateZ(0px) scale(1) translateY(-5vh);
+    transform: translateZ(0px) scale(1) translateY(-5vh);
+    width: 100%;
+}
+
+#bg2Img {
+    width: 100%;
+}
+
+#bg3 {
+    position: absolute;
+    -webkit-transform: translateZ(-.25px) scale(1.25) translateY(0vh);
+    transform: translateZ(-.25px) scale(1.25) translateY(0vh);
+    width: 100%;
+}
+
+#bg3Img {
+    width: 100%;
+}
+
+#bg4 {
+    position: absolute;
+    -webkit-transform: translateZ(-.75px) scale(1.75) translateY(-5vh);
+    transform: translateZ(-.75px) scale(1.75) translateY(-5vh);
+    width: 100%;
+}
+
+#bg4Img {
+    width: 100%;
+}
+
+#bg5 {
+    position: absolute;
+    -webkit-transform: translateZ(-1px) scale(2) translateY(-5vh);
+    transform: translateZ(-1px) scale(2) translateY(-5vh);
+    width: 100%;
+}
+
+#bg5Img {
+    width: 100%;
+}
+
+
+/*cards*/
+
+.cards {
+    position: relative;
+    z-index: 10000;
+    /* top: 90px; */
+    width: 150px;
+    height: 285px;
+    float: right;
+    display: inline-block;
+    margin: auto;
+    right: 25px;
+}
+
+.cardContainer {
+    width: 100%;
+    height: 30vh;
+    z-index: 1010;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+}
+
+.hand {
+    width: 50vw;
+    height: 30vh;
+    z-index: 1030;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    right: 0;
+}
+
+#card1 {
+    background-image: url("../img/50attackboost.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#card2 {
+    background-image: url("../img/1_lowsingleheal.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#card3 {
+    background-image: url("../img/2_lowattackboost.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#card1:hover {
+    -webkit-animation: hoverTEST .75s infinite ease-in-out;
+    animation: hoverTEST .75s infinite ease-in-out;
+}
+
+#card2:hover {
+    -webkit-animation: hoverTEST .75s infinite ease-in-out;
+    animation: hoverTEST .75s infinite ease-in-out;
+}
+
+#card3:hover {
+    -webkit-animation: hoverTEST .75s infinite ease-in-out;
+    animation: hoverTEST .75s infinite ease-in-out;
+}
+
+@-webkit-keyframes hoverTEST {
+    0% {
+        /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+    }
+    50% {
+        /* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2)*/
+        ;
+        -webkit-transform: translatey(-20px);
+        ;
+        transform: translatey(-20px);
+    }
+    100% {
+        /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+    }
+}
+
+@keyframes hoverTEST {
+    0% {
+        /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+    }
+    50% {
+        /* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2)*/
+        ;
+        -webkit-transform: translatey(-20px);
+        ;
+        transform: translatey(-20px);
+    }
+    100% {
+        /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+    }
+}
+
+.nameTag {
+    background: url("../img/nametag.svg") no-repeat;
+}
+
+
+/* 
+.nameTag-Active {
+    display: block;
+} */
+
+.nameTagCommanders {
+    background-size: contain;
+    height: 90px;
+    width: 313px;
+    position: absolute;
+    margin: auto;
+    pointer-events: none;
+}
+
+#ntLightCommander {
+    top: 50px;
+}
+
+.nameTagMinions {
+    background-size: contain;
+    height: 90px;
+    width: 200px;
+    margin: auto;
+    position: absolute;
+    /* display: none */
+    pointer-events: none;
+}
+
+.minionSelected {
+    -webkit-box-shadow: 0px 0px 5px #fff;
+    box-shadow: 0px 0px 5px #fff;
+}
+
+#ntlightSoldier {
+    left: 310px;
+    top: 200px;
+    display: none;
+}
+
+#ntlightArcher {
+    left: 200px;
+    top: 120px;
+    font-size: 1em;
+    display: none;
+}
+
+#ntlightCommander {
+    display: none;
+    left: 30px;
+    top: 10px;
+    font-size: 1em;
+}
+
+#ntlightDog {
+    left: 510px;
+    top: 260px;
+    font-size: 1.2em;
+    display: none;
+}
+
+#ntdarkCommander {
+    top: 25px;
+    right: 5px;
+    font-size: 1.1em;
+    display: none;
+}
+
+#ntdarkDog {
+    top: 280px;
+    right: 550px;
+    display: none;
+}
+
+#ntdarkGrunt {
+    top: 190px;
+    right: 400px;
+    display: none;
+}
+
+#ntdarkWizard {
+    top: 180px;
+    right: 250px;
+    display: none;
+}
+
+
+/* Room Div */
+
+#roomDiv {
+    color: #F2f2f2;
+    font-size: 1em;
+    cursor: pointer;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    bottom: 170px;
+    left: 40px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+/*animations*/
+
+
+/*DARKDOG*/
+
+@keyframes darkDogAttack {
+    0% {
+        animation: darkDogAttack steps(5);
+        background-position: -813px -6578px;
+    }
+    28% {
+        background-position: -1625px -6578px;
+    }
+    28.1% {
+        animation: darkDogAttack steps(10);
+        background-position: 0px -6704px;
+    }
+    87% {
+        background-position: -1625px -6704px;
+    }
+    87.1% {
+        animation: darkDogAttack steps(2);
+        background-position: 0px -6830px;
+    }
+    100% {
+        background-position: -325px -6830px;
+    }
+}
+
+@keyframes darkDogDamaged {
+    0% {
+        animation: darkDogDamaged steps(8);
+        background-position: -325px -6832px;
+    }
+    90% {
+        background-position: -1625px -6832px;
+    }
+    90.1% {
+        animation: darkDogDamaged steps(1);
+        background-position: 0px -6959px;
+    }
+    100% {
+        background-position: -163px -6959px;
+    }
+}
+
+@keyframes darkDogIdle {
+    0% {
+        animation: darkDog steps(10);
+        background-position: 0px -6324px;
+    }
+    37% {
+        background-position: -1625px -6324px;
+    }
+    37.1% {
+        animation: darkDog steps(10);
+        background-position: 0px -6451px;
+    }
+    79% {
+        background-position: -1625px -6451px;
+    }
+    79.1% {
+        animation: darkDog steps(3);
+        background-position: 0px -6578px;
+    }
+    100% {
+        background-position: -486px -6578px;
+    }
+}
+
+@keyframes darkDogDeath {
+    0% {
+        animation: darkDog 1.5s steps(9);
+        background-position: 0px -7086px;
+    }
+    37% {
+        background-position: -1463px -7086px;
+    }
+    37.1% {
+        animation: darkDog 1.5s steps(10);
+        background-position: 0px -7213px;
+    }
+    74% {
+        background-position: -1625px -7213px;
+    }
+    74.1% {
+        animation: darkDog 1.5s steps(5);
+        background-position: 0px -7340px;
+    }
+    100% {
+        background-position: -813px -7340px;
+    }
+}
+
+
+/*DARKWIZZ*/
+
+@keyframes darkWizardIdle {
+    0% {
+        animation: darkWizardIdle steps(12);
+        background-position: 0px -2366px;
+    }
+    25% {
+        background-position: -2718px -2366px;
+    }
+    25.1% {
+        animation: darkWizardIdle steps(12);
+        background-position: 0px -2649px;
+    }
+    75% {
+        background-position: -2718px -2649px;
+    }
+    75.1% {
+        animation: darkWizardIdle steps(12);
+        background-position: 0px -2932px;
+    }
+    100% {
+        background-position: -2718px -2932px;
+    }
+}
+
+@keyframes darkWizardAttack {
+    0% {
+        animation: darkWizardAttack steps(12);
+        background-position: 0px -3215px;
+    }
+    55% {
+        background-position: -2718px -3215px;
+    }
+    55.1% {
+        animation: darkWizardrAttack steps(12);
+        background-position: 0px -3498px;
+    }
+    100% {
+        background-position: -2718px -3498px;
+    }
+}
+
+@keyframes darkWizardDamaged {
+    0% {
+        animation: darkWizardDamaged steps(12);
+        background-position: 0px -3781px;
+    }
+    100% {
+        background-position: -2718px -3781px;
+    }
+}
+
+@keyframes darkWizardDeath {
+    0% {
+        animation: darkWizardDeath steps(12);
+        background-position: 0px -4064px;
+    }
+    55% {
+        background-position: -2718px -4064px;
+    }
+    55.1% {
+        animation: darkWizardrDeath steps(12);
+        background-position: 0px -4347px;
+    }
+    100% {
+        background-position: -2718px -4347px;
+    }
+}
+
+
+/*DARKGRUNT*/
+
+@keyframes darkGruntIdle {
+    0% {
+        animation: darkGruntIdle steps(9);
+        background-position: 0px -4630px;
+    }
+    50% {
+        background-position: -2354px -4630px;
+    }
+    50.1% {
+        animation: darkGruntIdle steps(9);
+        background-position: 0px -4872px;
+    }
+    96% {
+        background-position: -2354px -4872px;
+    }
+    96.1% {
+        animation: darkGruntIdle steps(1);
+        background-position: 0px -5114px;
+    }
+    100% {
+        background-position: -262px -5114px;
+    }
+}
+
+@keyframes darkGruntAttack {
+    0% {
+        animation: darkGruntAttack steps(8);
+        background-position: -262px -5114px;
+    }
+    50% {
+        background-position: -2354px -5114px;
+    }
+    50.1% {
+        animation: darkGruntAttack steps(9);
+        background-position: 0px -5356px;
+    }
+    100% {
+        background-position: -2354px -5356px;
+    }
+}
+
+@keyframes darkGruntDamaged {
+    0% {
+        animation: darkGruntDamaged steps(3);
+        background-position: -1569px -5840px;
+    }
+    50% {
+        background-position: -2354px -5840px;
+    }
+    50.1% {
+        animation: darkGruntDamaged steps(9);
+        background-position: 0px -6082px;
+    }
+    100% {
+        background-position: -2354px -6082px;
+    }
+}
+
+@keyframes darkGruntDeath {
+    0% {
+        animation: darkGruntDeath steps(9);
+        background-position: -0px -5598px;
+    }
+    50% {
+        background-position: -2354px -5598px;
+    }
+    50.1% {
+        animation: darkGruntDeath steps(5);
+        background-position: 0px -5840px;
+    }
+    100% {
+        background-position: -1308px -5840px;
+    }
+}
+
+
+/*DARKCOMMANDER*/
+
+@keyframes darkCommanderIdle {
+    0% {
+        animation: darkCommanderIdle steps(11);
+        background-position: 0px -0px;
+    }
+    55% {
+        background-position: -3542px -0px;
+    }
+    55.1% {
+        animation: darkCommanderIdle steps(8);
+        background-position: 0px -338px;
+    }
+    100% {
+        background-position: -2576px -338px;
+    }
+}
+
+@keyframes darkCommanderAttack {
+    0% {
+        animation: darkCommanderAttack steps(4);
+        background-position: -2254px -338px;
+    }
+    25% {
+        background-position: -3542px -338px;
+    }
+    25.1% {
+        animation: darkCommanderAttack steps(11);
+        background-position: 0px -676px;
+    }
+    75% {
+        background-position: -3542px -676px;
+    }
+    75.1% {
+        animation: darkCommanderAttack steps(5);
+        background-position: 0px -1014px;
+    }
+    100% {
+        background-position: -1610px -1014px;
+    }
+}
+
+@keyframes darkCommanderDamaged {
+    0% {
+        animation: darkCommanderDamaged steps(5);
+        background-position: -1932px -1014px;
+    }
+    55% {
+        background-position: -3542px -1014px;
+    }
+    55.1% {
+        animation: darkCommanderDamaged steps(5);
+        background-position: 0px -1352px;
+    }
+    100% {
+        background-position: -1610px -1352px;
+    }
+}
+
+@keyframes darkCommanderDeath {
+    0% {
+        animation: darkCommanderDeath steps(5);
+        background-position: -1932px -1352px;
+    }
+    25% {
+        background-position: -3542px -1352px;
+    }
+    25.1% {
+        animation: darkCommanderDeath steps(11);
+        background-position: 0px -1690px;
+    }
+    75% {
+        background-position: -3542px -1690px;
+    }
+    75.1% {
+        animation: darkCommanderDeath steps(10);
+        background-position: 0px -2028px;
+    }
+    100% {
+        background-position: -3220px -2028px;
+    }
+}
+
+
+/*LIGHTSOLDIER*/
+
+@keyframes lightSoldierIdle {
+    0% {
+        animation: lightSoldierIdle steps(9);
+        background-position: -0px -5465px;
+    }
+    22% {
+        background-position: -2084px -5465px;
+    }
+    22.1% {
+        animation: lightSoldierIdle steps(9);
+        background-position: -0px -5672px;
+    }
+    45% {
+        background-position: -2084px -5672px;
+    }
+    45.1% {
+        animation: lightSoldierIdle steps(9);
+        background-position: -0px -5878px;
+    }
+    68% {
+        background-position: -2084px -5878px;
+    }
+    68.1% {
+        animation: lightSoldierIdle steps(9);
+        background-position: -0px -6085px;
+    }
+    92% {
+        background-position: -2084px -6085px;
+    }
+    92.1% {
+        animation: lightSoldierIdle steps(3);
+        background-position: -0px -6291px;
+    }
+    100% {
+        background-position: -695px -6291px;
+    }
+}
+
+@keyframes lightSoldierAttack {
+    0% {
+        animation: lightSoldierAttack steps(5);
+        background-position: -926px -6291px;
+    }
+    40% {
+        background-position: -2084px -6291px;
+    }
+    40.1% {
+        animation: lightSoldierAttack steps(9);
+        background-position: -0px -6498px;
+    }
+    100% {
+        background-position: -2084px -6498px;
+    }
+}
+
+@keyframes lightSoldierDamaged {
+    0% {
+        animation: lightSoldierDamaged steps(9);
+        background-position: -0px -6704px;
+    }
+    90% {
+        background-position: -2084px -6704px;
+    }
+    90.1% {
+        animation: lightSoldierDamaged steps(1);
+        background-position: -0px -6911px;
+    }
+    100% {
+        background-position: -232px -6911px;
+    }
+}
+
+@keyframes lightSoldierDeath {
+    0% {
+        animation: lightSoldierDeath steps(8);
+        background-position: -232px -6911px;
+    }
+    46% {
+        background-position: -2084px -6911px;
+    }
+    46.1% {
+        animation: lightSoldierDeath steps(9);
+        background-position: -0px -7117px;
+    }
+    100% {
+        background-position: -2084px -7117px;
+    }
+}
+
+
+/*DARKDOG*/
+
+@keyframes lightDogIdle {
+    0% {
+        animation: lightDogIdle steps(8);
+        background-position: -0px -4315px;
+    }
+    28% {
+        background-position: -2408px -4315px;
+    }
+    28.1% {
+        animation: lightDogIdle steps(8);
+        background-position: -0px -4444px;
+    }
+    56% {
+        background-position: -2408px -4444px;
+    }
+    56.1% {
+        animation: lightDogIdle steps(8);
+        background-position: -0px -4573px;
+    }
+    86% {
+        background-position: -2408px -4573px;
+    }
+    86.1% {
+        animation: lightDogIdle steps(4);
+        background-position: -0px -4702px;
+    }
+    100% {
+        background-position: -1204px -4702px;
+    }
+}
+
+@keyframes lightDogAttack {
+    0% {
+        animation: lightDogAttack steps(4);
+        background-position: -1204px -4702px;
+    }
+    25% {
+        background-position: -2408px -4702px;
+    }
+    25.1% {
+        animation: lightDogAttack steps(8);
+        background-position: -0px -4831px;
+    }
+    75% {
+        background-position: -2408px -4831px;
+    }
+    75.1% {
+        animation: lightDogAttack steps(4);
+        background-position: -0px -4960px;
+    }
+    100% {
+        background-position: -1204px -4960px;
+    }
+}
+
+@keyframes lightDogDamaged {
+    0% {
+        animation: lightDogDamaged steps(3);
+        background-position: -1505px -4960px;
+    }
+    30% {
+        background-position: -2408px -4960px;
+    }
+    30.1% {
+        animation: lightDogDamaged steps(7);
+        background-position: -0px -5089px;
+    }
+    100% {
+        background-position: -2107px -5089px;
+    }
+}
+
+@keyframes lightDogDeath {
+    0% {
+        animation: lightDogDeath steps(1);
+        background-position: -2106x -5089px;
+    }
+    8% {
+        background-position: -2408px -5089px;
+    }
+    8.1% {
+        animation: lightDogDeath steps(8);
+        background-position: -0px -5218px;
+    }
+    65% {
+        background-position: -2408px -5218px;
+    }
+    65.1% {
+        animation: lightDogDeath steps(4);
+        background-position: -0px -5347px;
+    }
+    100% {
+        background-position: -2408px -5347px;
+    }
+}
+
+
+/*LIGHTCOMMANDER*/
+
+@keyframes lightCommanderIdle {
+    0% {
+        animation: lightCommanderIdle steps(8);
+        background-position: -0px -0px;
+    }
+    20% {
+        background-position: -2480px -0px;
+    }
+    20.1% {
+        animation: lightCommanderIdle steps(8);
+        background-position: -0px -227px;
+    }
+    40% {
+        background-position: -2480px -227px;
+    }
+    40.1% {
+        animation: lightCommanderIdle steps(8);
+        background-position: -0px -453px;
+    }
+    60% {
+        background-position: -2480px -453px;
+    }
+    60.1% {
+        animation: lightCommanderIdle steps(8);
+        background-position: -0px -680px;
+    }
+    80% {
+        background-position: -2480px -680px;
+    }
+    80.1% {
+        animation: lightCommanderIdle steps(6);
+        background-position: -0px -906px;
+    }
+    100% {
+        background-position: -1860px -906px;
+    }
+}
+
+@keyframes lightCommanderAttack {
+    1% {
+        animation: lightCommanderAttack steps(3);
+        background-position: -1550px -908px;
+    }
+    15% {
+        background-position: -2480px -908px;
+    }
+    15.1% {
+        animation: lightCommanderAttack steps(8);
+        background-position: -0px -1135px;
+    }
+    45% {
+        background-position: -2480px -1135px;
+    }
+    45.1% {
+        animation: lightCommanderAttack steps(8);
+        background-position: -0px -1362px;
+    }
+    80% {
+        background-position: -2480px -1362px;
+    }
+    80.1% {
+        animation: lightCommanderAttack steps(5);
+        background-position: -0px -1589px;
+    }
+    100% {
+        background-position: -1550px -1589px;
+    }
+}
+
+@keyframes lightCommanderDamaged {
+    1% {
+        animation: lightCommanderDamaged steps(2);
+        background-position: -1860px -1589px;
+    }
+    20% {
+        background-position: -2480px -1589px;
+    }
+    20.1% {
+        animation: lightCommanderDamaged steps(8);
+        background-position: -0px -1816px;
+    }
+    65% {
+        background-position: -2480px -1816px;
+    }
+    65.1% {
+        animation: lightCommanderDamaged steps(4);
+        background-position: -0px -2043px;
+    }
+    100% {
+        background-position: -1240px -2043px;
+    }
+}
+
+@keyframes lightCommanderDeath {
+    1% {
+        animation: lightCommanderDeath steps(4);
+        background-position: -1240px -2043px;
+    }
+    30% {
+        background-position: -2480px -2043px;
+    }
+    30.1% {
+        animation: lightCommanderDeath steps(8);
+        background-position: -0px -2270px;
+    }
+    100% {
+        background-position: -2480px -2270px;
+    }
+}
+
+
+/*LIGHTARCHER*/
+
+@keyframes lightArcherIdle {
+    0% {
+        animation: lightArcherIdle steps(9);
+        background-position: -0px -2497px;
+    }
+    26% {
+        background-position: -2214px -2497px;
+    }
+    26.1% {
+        animation: lightArcherIdle steps(9);
+        background-position: -0px -2699px;
+    }
+    52% {
+        background-position: -2214px -2699px;
+    }
+    52.1% {
+        animation: lightArcherIdle steps(9);
+        background-position: -0px -2901px;
+    }
+    79% {
+        background-position: -2214px -2901px;
+    }
+    79.1% {
+        animation: lightArcherIdle steps(6);
+        background-position: -0px -3103px;
+    }
+    100% {
+        background-position: -1476px -3103px;
+    }
+}
+
+@keyframes lightArcherAttack {
+    0% {
+        animation: lightArcherAttack steps(3);
+        background-position: -1476px -3102px;
+    }
+    15% {
+        background-position: -2214px -3102px;
+    }
+    15.1% {
+        animation: lightArcherAttack steps(9);
+        background-position: -0px -3303px;
+    }
+    50% {
+        background-position: -2214px -3303px;
+    }
+    50.1% {
+        animation: lightArcherAttack steps(9);
+        background-position: -0px -3505px;
+    }
+    85% {
+        background-position: -2214px -3505px;
+    }
+    85.1% {
+        animation: lightArcherAttack steps(3);
+        background-position: -0px -3706px;
+    }
+    100% {
+        background-position: -738px -3706px;
+    }
+}
+
+@keyframes lightArcherDamaged {
+    0% {
+        animation: lightArcherDamaged steps(6);
+        background-position: -738px -3706px;
+    }
+    80% {
+        background-position: -2214px -3706px;
+    }
+    80.1% {
+        animation: lightArcherDamaged steps(1);
+        background-position: -0px -3908px;
+    }
+    100% {
+        background-position: -246px -3908px;
+    }
+}
+
+@keyframes lightArcherDeath {
+    0% {
+        animation: lightArcherDeath steps(7);
+        background-position: -492px -3908px;
+    }
+    50% {
+        background-position: -2214px -3908px;
+    }
+    50.1% {
+        animation: lightArcherDeath steps(8);
+        background-position: -0px -4109px;
+    }
+    100% {
+        background-position: -1968px -4109px;
+    }
+}
+
+
+/* Winning Div */
+
+
+/* When Dark Team Wins Divs */
+
+.darkWinner {
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 826px;
+    height: 522px;
+    z-index: 1000000000;
+    background-image: url('../img/darkWinner.png');
+    animation: darkWinner 1.5s steps(5) forwards;
+    transform: scale(1);
+    background-repeat: no-repeat;
+}
+
+.lightWinner {
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 826px;
+    height: 522px;
+    z-index: 1000000000;
+    background-image: url('../img/lightWinner.png');
+    animation: lightWinner 1.5s steps(5) forwards;
+    transform: scale(1);
+    background-repeat: no-repeat;
+}
+
+@keyframes darkWinner {
+    0% {
+        animation: darkWinner steps(5);
+        background-position: -0px -0px;
+    }
+    19% {
+        background-position: -4130px -0px;
+    }
+    19.001% {
+        animation: darkWinner steps(5);
+        background-position: -0px -522px;
+    }
+    38% {
+        background-position: -4130px -522px;
+    }
+    38.001% {
+        animation: darkWinner steps(5);
+        background-position: -0px -1044px;
+    }
+    56% {
+        background-position: -4130px -1044px;
+    }
+    56.001% {
+        animation: darkWinner steps(5);
+        background-position: -0px -1566px;
+    }
+    74% {
+        background-position: -4130px -1566px;
+    }
+    74.001% {
+        animation: darkWinner steps(5);
+        background-position: -0px -2088px;
+    }
+    91% {
+        background-position: -4130px -2088px;
+    }
+    91.001% {
+        animation: darkWinner steps(2);
+        background-position: -0px -2610px;
+    }
+    100% {
+        background-position: -1652px -2610px;
+    }
+}
+
+@keyframes lightWinner {
+    0% {
+        animation: lightWinner steps(5);
+        background-position: -0px -0px;
+    }
+    19% {
+        background-position: -4130px -0px;
+    }
+    19.001% {
+        animation: lightWinner steps(5);
+        background-position: -0px -522px;
+    }
+    38% {
+        background-position: -4130px -522px;
+    }
+    38.001% {
+        animation: lightWinner steps(5);
+        background-position: -0px -1044px;
+    }
+    56% {
+        background-position: -4130px -1044px;
+    }
+    56.001% {
+        animation: lightWinner steps(5);
+        background-position: -0px -1566px;
+    }
+    74% {
+        background-position: -4130px -1566px;
+    }
+    74.001% {
+        animation: lightWinner steps(5);
+        background-position: -0px -2088px;
+    }
+    91% {
+        background-position: -4130px -2088px;
+    }
+    91.001% {
+        animation: lightWinner steps(2);
+        background-position: -0px -2610px;
+    }
+    100% {
+        background-position: -1652px -2610px;
+    }
+}
+
+
+/*Media Queries*/
+
+@media only screen and (min-width: 3000px) {}
+
+@media only screen and (min-width: 1280px) {}
+
+@media only screen and (min-width: 1400px) {}
+
+@media only screen and (min-width: 1536px) {}
+
+@media only screen and (min-width: 1600px) {
+    #scrollHere {
+        bottom: 2400px;
+    }
+    #header img {
+        width: 35%;
+        bottom: 2250px;
+    }
+    #mMenu {
+        width: 45%;
+        bottom: 1500px;
+    }
+    #signIn img {
+        width: 300px;
+        bottom: 460px;
+    }
+    #mMaking img {
+        width: 300px;
+        bottom: 400px;
+    }
+    #back1 img {
+        width: 300px;
+        bottom: 175px;
+    }
+    #subHeader1 img {
+        top: 120px;
+    }
+    #back2 img {
+        bottom: 180px;
+    }
+    #sub1 img {
+        right: 80px;
+        bottom: 180px;
+    }
+    #join1 img {
+        width: 300px;
+        bottom: 480px;
+    }
+    #host1 img {
+        width: 300px;
+        bottom: 420px;
+    }
+    #back3 img {
+        width: 300px;
+        bottom: 220px;
+    }
+    #jMenu {
+        width: 55%;
+        bottom: 1500px;
+    }
+    #back4 img {
+        left: 70px;
+        bottom: 210px;
+        width: 32%;
+    }
+    #join2 img {
+        right: 70px;
+        width: 32%;
+        bottom: 220px;
+    }
+    #hMenu {
+        width: 45%;
+        bottom: 1500px;
+    }
+    #host2 img {
+        right: 100px;
+        width: 32%;
+        bottom: 210px;
+    }
+    #back5 img {
+        left: 100px;
+        bottom: 210px;
+        width: 32%
+    }
+    #subHeader2 img {
+        top: 100px;
+        width: 60%;
+    }
+    /*
+    #hostDiv{
+        bottom:
+        height:
+        transform: scale();
+    }
+*/
+    #charMenu {
+        bottom: 1500px;
+    }
+    #lightBox {
+        width: 400px;
+        left: 120px;
+        bottom: 140px;
+    }
+    #darkBox {
+        width: 400px;
+        right: 120px;
+        bottom: 140px;
+    }
+    #menuDBox {
+        width: 220px;
+        bottom: 200px;
+    }
+    #readyP img {
+        width: 150px;
+        bottom: 200px;
+    }
+    #back6 img {
+        bottom: 150px;
+        width: 150px;
+    }
+    #city1 {
+        -webkit-transform: translateZ(.25px) scale(.75) translateY(0vh);
+        transform: translateZ(.25px) scale(.75) translateY(0vh);
+    }
+    #city2 {
+        -webkit-transform: translateZ(0px) scale(1) translateY(-2vh);
+        transform: translateZ(0px) scale(1) translateY(-2vh);
+    }
+    #city3 {
+        -webkit-transform: translateZ(-.25px) scale(1.25) translateY(10vh);
+        transform: translateZ(-.25px) scale(1.25) translateY(10vh);
+    }
+    #city4 {
+        -webkit-transform: translateZ(-.5px) scale(1.5) translateY(30vh);
+        transform: translateZ(-.5px) scale(1.5) translateY(30vh);
+    }
+    #city5 {
+        -webkit-transform: translateZ(-.75px) scale(1.75) translateY(25vh);
+        transform: translateZ(-.75px) scale(1.75) translateY(25vh);
+    }
+    /*
+    
+    .cards{
+        width:
+        height: 
+        right:
+    }
+    .cardContainer{
+        height:
+        bottom:
+    }
+    .hand{
+        width:
+        height: 
+    }
+*/
+    .nameTagCommanders {
+        height: 190px;
+        width: 313px;
+    }
+    #ntlightSoldier {
+        left: 410px;
+        top: 400px;
+        display: none;
+    }
+    #ntlightArcher {
+        left: 200px;
+        top: 380px;
+        font-size: 1em;
+        display: none;
+    }
+    #ntlightCommander {
+        display: none;
+        left: 0;
+        top: 100px;
+        font-size: 1em;
+    }
+    #ntlightDog {
+        left: 610px;
+        top: 460px;
+        font-size: 1.2em;
+        display: none;
+    }
+    #ntdarkCommander {
+        top: 225px;
+        right: 5px;
+        font-size: 1.1em;
+        display: none;
+    }
+    #ntdarkDog {
+        top: 440px;
+        right: 550px;
+        display: none;
+    }
+    #ntdarkGrunt {
+        top: 390px;
+        right: 400px;
+        display: none;
+    }
+    #ntdarkWizard {
+        top: 350px;
+        right: 250px;
+        display: none;
+    }
+    /*
+    #menuContainer{}
+    #menuBtn img{}
+    #endTurnBtn img{}
+  
+*/
+    #bg2 {
+        -webkit-transform: translateZ(0px) scale(1) translateY(0vh);
+        transform: translateZ(0px) scale(1) translateY(0vh);
+    }
+    #bg3 {
+        -webkit-transform: translateZ(-.25px) scale(1.25) translateY(-5vh);
+        transform: translateZ(-.25px) scale(1.25) translateY(-5vh);
+    }
+    #bg4 {
+        -webkit-transform: translateZ(-.75px) scale(1.75) translateY(-10vh);
+        transform: translateZ(-.75px) scale(1.75) translateY(-10vh);
+    }
+    #bg5 {
+        -webkit-transform: translateZ(-1px) scale(2) translateY(-11vh);
+        transform: translateZ(-1px) scale(2) translateY(-11vh);
+    }
+    #endTurnBtn img {
+        top: 160px;
+    }
+    #lightArcher {
+        bottom: 280px;
+        left: 130px;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+    #lightCommander {
+        left: -50px;
+        -webkit-transform: scale(1.6);
+        -ms-transform: scale(1.6);
+        transform: scale(1.6);
+        bottom: 450px;
+    }
+    #lightDog {
+        left: 550px;
+        -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+        transform: scale(.9);
+        bottom: 250px;
+    }
+    #lightSoldier {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        left: 410px;
+        bottom: 280px;
+    }
+    #darkCommander {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        right: -50px;
+        bottom: 350px;
+    }
+    #darkWizard {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        right: 230px;
+        bottom: 280px;
+    }
+    #darkDog {
+        right: 580px;
+        -webkit-transform: scale(.7);
+        -ms-transform: scale(.7);
+        transform: scale(.7);
+        bottom: 250px;
+    }
+    #darkGrunt {
+        -webkit-transform: scale(.8);
+        -ms-transform: scale(.8);
+        transform: scale(.8);
+        bottom: 230px;
+        right: 430px;
+    }
+}
+
+
+/*windows computer lab screen*/
+
+@media only screen and (min-width: 1920px) {
+    #scrollHere {
+        bottom: 2600px;
+    }
+    #header img {
+        width: 35%;
+        bottom: 2250px;
+    }
+    #mMenu {
+        width: 35%;
+        bottom: 1500px;
+    }
+    #signIn img {
+        width: 300px;
+        bottom: 520px;
+    }
+    #mMaking img {
+        width: 300px;
+        bottom: 420px;
+    }
+    #back1 img {
+        width: 300px;
+        bottom: 150px;
+    }
+    #subHeader1 img {
+        top: 120px;
+    }
+    #back2 img {
+        bottom: 180px;
+    }
+    #sub1 img {
+        right: 80px;
+        bottom: 180px;
+    }
+    #join1 img {
+        width: 300px;
+        bottom: 550px;
+    }
+    #host1 img {
+        width: 300px;
+        bottom: 420px;
+    }
+    #back3 img {
+        width: 300px;
+        bottom: 220px;
+    }
+    #jMenu {
+        width: 40%;
+        bottom: 1550px;
+    }
+    #back4 img {
+        left: 70px;
+        bottom: 210px;
+        width: 32%;
+    }
+    #join2 img {
+        right: 70px;
+        width: 32%;
+        bottom: 210px;
+    }
+    #hMenu {
+        width: 35%;
+        bottom: 1500px;
+    }
+    #host2 img {
+        right: 100px;
+        width: 32%;
+        bottom: 210px;
+    }
+    #back5 img {
+        left: 100px;
+        bottom: 210px;
+        width: 32%
+    }
+    #subHeader2 img {
+        top: 100px;
+        width: 60%;
+    }
+    /*
+    #hostDiv{
+        bottom:
+        height:
+        transform: scale();
+    }
+*/
+    #charMenu {
+        bottom: 1300px;
+    }
+    #lightBox {
+        width: 500px;
+        left: 120px;
+        bottom: 140px;
+    }
+    #darkBox {
+        width: 500px;
+        right: 120px;
+        bottom: 140px;
+    }
+    #menuDBox {
+        width: 220px;
+        bottom: 200px;
+    }
+    #readyP img {
+        width: 150px;
+        bottom: 200px;
+    }
+    #back6 img {
+        bottom: 150px;
+        width: 150px;
+    }
+    /*
+    #city1{
+        transform: translateZ() scale() translateY();
+    }
+    #city2{
+        transform: translateZ() scale() translateY();
+    }
+    #city3{
+        transform: translateZ() scale() translateY();
+    }
+    #city4{
+        transform: translateZ() scale() translateY();
+    }
+    #city5{
+        transform: translateZ() scale() translateY();
+    }
+    
+*/
+    /*
+    
+    .cards{
+        width:
+        height: 
+        right:
+    }
+    .cardContainer{
+        height:
+        bottom:
+    }
+    .hand{
+        width:
+        height: 
+    }
+*/
+    .nameTagCommanders {
+        height: 190px;
+        width: 313px;
+    }
+    #ntlightSoldier {
+        left: 470px;
+        top: 480px;
+        display: none;
+    }
+    #ntlightArcher {
+        left: 240px;
+        top: 450px;
+        font-size: 1em;
+        display: none;
+    }
+    #ntlightCommander {
+        display: none;
+        left: 0;
+        top: 2 00px;
+        font-size: 1em;
+    }
+    #ntlightDog {
+        left: 750px;
+        top: 550px;
+        font-size: 1.2em;
+        display: none;
+    }
+    #ntdarkCommander {
+        top: 225px;
+        right: 5px;
+        font-size: 1.1em;
+        display: none;
+    }
+    #ntdarkDog {
+        top: 540px;
+        right: 750px;
+        display: none;
+    }
+    #ntdarkGrunt {
+        top: 460px;
+        right: 530px;
+        display: none;
+    }
+    #ntdarkWizard {
+        top: 450px;
+        right: 300px;
+        display: none;
+    }
+    /*
+    #menuContainer{}
+    #menuBtn img{}
+    
+  
+    
+*/
+    #endTurnBtn img {
+        top: 200px;
+    }
+    #bg2 {
+        -webkit-transform: translateZ(0px) scale(1) translateY(-5vh);
+        transform: translateZ(0px) scale(1) translateY(-5vh);
+    }
+    #bg3 {
+        -webkit-transform: translateZ(-.25px) scale(1.25) translateY(-5vh);
+        transform: translateZ(-.25px) scale(1.25) translateY(-5vh);
+    }
+    #bg4 {
+        -webkit-transform: translateZ(-.75px) scale(1.75) translateY(-5vh);
+        transform: translateZ(-.75px) scale(1.75) translateY(-5vh);
+    }
+    #bg5 {
+        -webkit-transform: translateZ(-1px) scale(2) translateY(-5vh);
+        transform: translateZ(-1px) scale(2) translateY(-5vh);
+    }
+    #lightArcher {
+        bottom: 380px;
+        left: 180px;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    #lightCommander {
+        left: -50px;
+        -webkit-transform: scale(1.7);
+        -ms-transform: scale(1.7);
+        transform: scale(1.7);
+        bottom: 550px;
+    }
+    #lightDog {
+        left: 700px;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        bottom: 350px;
+    }
+    #lightSoldier {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        left: 480px;
+        bottom: 380px;
+    }
+    #darkCommander {
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+        right: -50px;
+        bottom: 450px;
+    }
+    #darkWizard {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        right: 300px;
+        bottom: 380px;
+    }
+    #darkDog {
+        right: 750px;
+        -webkit-transform: scale(.8);
+        -ms-transform: scale(.8);
+        transform: scale(.8);
+        bottom: 350px;
+    }
+    #darkGrunt {
+        -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+        transform: scale(.9);
+        bottom: 330px;
+        right: 530px;
+    }
+}
+
+@media only screen and (min-width: 2500px) {
+    #scrollHere {
+        bottom: 2650px;
+    }
+    #header img {
+        width: 35%;
+        bottom: 1750px;
+    }
+    #mMenu {
+        width: 35%;
+        bottom: 800px;
+    }
+    #signIn img {
+        width: 400px;
+        bottom: 620px;
+    }
+    #mMaking img {
+        width: 400px;
+        bottom: 520px;
+    }
+    #back1 img {
+        width: 400px;
+        bottom: 220px;
+    }
+    #subHeader1 img {
+        top: 120px;
+    }
+    #back2 img {
+        bottom: 200px;
+    }
+    #sub1 img {
+        right: 100px;
+        bottom: 200px;
+    }
+    #join1 img {
+        width: 400px;
+        bottom: 550px;
+    }
+    #host1 img {
+        width: 400px;
+        bottom: 420px;
+    }
+    #back3 img {
+        width: 400px;
+        bottom: 220px;
+    }
+    #jMenu {
+        width: 40%;
+        bottom: 870px;
+    }
+    #back4 img {
+        left: 70px;
+        bottom: 210px;
+        width: 32%;
+    }
+    #join2 img {
+        right: 70px;
+        width: 32%;
+        bottom: 210px;
+    }
+    #hMenu {
+        width: 35%;
+        bottom: 800px;
+    }
+    #host2 img {
+        right: 100px;
+        width: 32%;
+        bottom: 210px;
+    }
+    #back5 img {
+        left: 100px;
+        bottom: 210px;
+        width: 32%
+    }
+    #subHeader2 img {
+        top: 100px;
+        width: 60%;
+    }
+    /*
+    #hostDiv{
+        bottom:
+        height:
+        transform: scale();
+    }
+*/
+    #charMenu {
+        bottom: 800px;
+    }
+    #lightBox {
+        width: 600px;
+        left: 120px;
+        bottom: 140px;
+    }
+    #darkBox {
+        width: 600px;
+        right: 120px;
+        bottom: 140px;
+    }
+    #menuDBox {
+        width: 280px;
+        bottom: 200px;
+    }
+    #readyP img {
+        width: 180px;
+        bottom: 300px;
+    }
+    #back6 img {
+        bottom: 200px;
+        width: 180px;
+    }
+    /*
+    #city1{
+        transform: translateZ() scale() translateY();
+    }
+    #city2{
+        transform: translateZ() scale() translateY();
+    }
+    #city3{
+        transform: translateZ() scale() translateY();
+    }
+    #city4{
+        transform: translateZ() scale() translateY();
+    }
+    #city5{
+        transform: translateZ() scale() translateY();
+    }
+*/
+    .cards {
+        width: 200px;
+    }
+    #ntlightSoldier {
+        left: 630px;
+        top: 590px;
+    }
+    #ntlightArcher {
+        left: 330px;
+        top: 600px;
+    }
+    #ntlightCommander {
+        left: 0;
+        top: 385px;
+    }
+    #ntlightDog {
+        left: 930px;
+        top: 700px;
+    }
+    #ntdarkCommander {
+        right: 0;
+        top: 400px;
+    }
+    #ntdarkDog {
+        right: 1060px;
+        top: 730px;
+    }
+    #ntdarkGrunt {
+        right: 760px;
+        top: 650px;
+    }
+    #ntdarkWizard {
+        right: 500px;
+        top: 630px;
+    }
+    /*
+    #menuContainer{}
+    #menuBtn img{}
+    #endTurnBtn img{}          
+/*
+    #bg2 {
+transform: translateZ(0px) scale(1) translateY(-5vh); 
+}
+#bg3 {
+ transform: translateZ(-.25px) scale(1.25) translateY(0vh);
+}
+#bg4 {
+transform: translateZ(-.75px) scale(1.75) translateY(-5vh);
+}
+#bg5 {
+transform: translateZ(-1px) scale(2) translateY(-5vh); 
+}
+*/
+    #lightArcher {
+        bottom: 500px;
+        left: 300px;
+        -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+    #lightCommander {
+        left: 0;
+        -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+        transform: scale(2);
+        bottom: 650px;
+    }
+    #lightDog {
+        left: 890px;
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+        bottom: 450px;
+    }
+    #lightSoldier {
+        -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        transform: scale(1.4);
+        left: 670px;
+        bottom: 480px;
+    }
+    #darkCommander {
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5);
+        right: 0;
+        bottom: 550px;
+    }
+    #darkWizard {
+        -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        transform: scale(1.4);
+        right: 480px;
+        bottom: 480px;
+    }
+    #darkDog {
+        right: 1050px;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        bottom: 450px;
+    }
+    #darkGrunt {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        bottom: 430px;
+        right: 800px;
+    }
+}

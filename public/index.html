@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="icon" href="../assets/favicon.png">
+    <title> For Glory! Battlefield!</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+</head>
+
+<body>
+    
+<section id="container1">
+    <div id="parallax">
+
+            <div id="logo">
+                <img src="img/logo.png" id="logoImg" alt="logo"/>
+            </div>
+            
+             <div id="startBtn">
+                <p>Press To Start</p>
+            </div>
+            
+            
+            <div id="city5">
+                <img src="img/ss1.png" alt="img1" id="city4Img" />
+            </div>
+
+            <div id="city4">
+                <img src="img/ss2.png" alt="img1" id="city4Img" />
+            </div>
+
+            <div id="city3">
+                <img src="img/ss3.png" alt="img1" id="city3Img" />
+            </div>
+
+            <div id="city2">
+                <img src="img/ss4.png" id="city2Img" alt="img1" />
+            </div>
+            
+            <div id="city1">
+                <img src="img/ss5.png" id="city1Img" alt="img1" /> 
+                
+                <div id="header">
+                    <img src="img/mainMenuHeader.svg" alt="logo" id="imgHead"/>
+                </div>
+                
+                <div id="scrollHere"></div>
+                
+                <div id="mMenu">
+                     <img src="img/options.svg" alt="logo"/>
+                    
+                     <div id="menuA">
+                         <div id="signIn">
+                            <img src="img/tutorialButton.svg" alt="logo"/>
+                         </div>
+                         <div id="mMaking">
+                            <img src="img/but_matchmaking.svg" alt="logo"/>
+                         </div>
+                          
+                         <div id="back1">
+                            <img src="img/but_back.svg" alt="logo"/>
+                         </div>
+                     </div>
+                     
+                     
+                     <div id="menuB">
+                        
+                           <div id="tutorialGif"> <img src="img/tutorialGif.gif" alt="img1" /></div>
+
+                         <div id="back2">    
+                             <img src="img/but_back.svg" alt="header"/>
+                         </div>
+                         
+                     </div>
+                         
+                     <div id="menuC">
+                         <div id="join1">
+                             <img src="img/but_join.svg" alt="join"/>
+                         </div>
+                         <div id="host1">
+                             <img src="img/but_host.svg" alt="host"/>
+                         </div>
+                         <div id="back3">    
+                             <img src="img/but_back.svg" alt="header"/>
+                         </div>
+                    </div>
+            </div>
+
+                
+            <div id="jMenu">
+            <div id="roomDiv"></div>
+                <img src="img/widemainbox.svg" alt="jmenu"/>
+                
+                <div id="menuD">
+                         <div id="join2">
+                            <img src="img/but_join.svg" alt="logo"/>
+                    </div>
+                         <div id="back4">
+                            <img src="img/but_back.svg" alt="logo"/>
+                         </div>
+                     </div>
+            </div>
+            
+            
+        <div id="hMenu">
+            <div id="inputDiv">
+                <input id="hostInput" type="text" /></div>
+            
+            <img src="img/options.svg" alt="hmenu"/>
+                        
+                         <div id="host2">
+                            <img src="img/but_host.svg" alt="logo"/>
+                
+            
+
+                         </div>
+                         <div id="back5">
+                            <img src="img/but_back.svg" alt="logo"/>
+                            
+                         </div>
+    </div>
+    
+
+    <div id="charMenu">
+                        <div id="lightBox">
+                             <img src="img/char_light.svg" alt="logo"/>
+                         </div>
+                         <div id="darkBox">
+                            <img src="img/char_dark.svg" alt="logo"/>
+                         </div>
+                         <div id="menuDBox">
+                            <img src="img/char_menu.svg" alt="logo"/>
+                             
+                             <div id="readyP">
+                            <img src="img/but_ready.svg" alt="logo"/>
+                         </div>
+                         <div id="back6">
+                            <img src="img/but_back.svg" alt="logo"/>
+                         </div>
+                         </div>
+    </div>
+
+    
+    </div>
+    </div>
+</section>
+
+  <section id="container2">
+    <div id="parallax2" class="shit">
+        <div id="b_status" style="padding: 10px; max-width: 300px; background-color: #f6f6f6; position: relative; top: 20px; z-index: 999; margin: 0px auto; text-align: center;"></div>
+        
+        <!-- SHOWS WHICH PLAYER YOU ARE -->
+        <div id="b_player" style="padding: 10px; max-width: 100px; background-color: #f6f6f6; position: absolute; top: 20px; left: 20px; z-index: 999; margin: 0px auto; text-align: center;"></div>
+            
+            <div id="bg5" class = "bgScroll">
+                <img src="img/bg4.png" alt="img1" id="bg4Img" />
+            </div>
+         
+            <div id="bg4" class = "bgScroll">
+                <img src="img/bg3.png" alt="img1" id="bg4Img" />
+            </div>
+            
+            <div id="bg3" class = "bgScroll">
+                <img src="img/bg2.png" alt="img1" id="bg3Img" />
+            </div>
+
+            <div id="bg2" class = "bgScroll">
+                <img src="img/bg1.png" id="bg2Img" alt="img1" />
+            </div>
+            
+          
+           
+       
+    </div>
+    
+        <div class="charContainer bgScroll">
+
+           
+            <div class="nameTag nameTagCommanders" id="ntlightCommander"></div>
+            <div class="nameTag nameTagMinions" id="ntlightArcher"></div>
+            <div class="nameTag nameTagMinions" id="ntlightSoldier"></div>
+            <div class="nameTag nameTagMinions" id="ntlightDog"></div>
+
+            <div class="nameTagCommanders nameTag" id="ntdarkCommander"></div>
+            <div class="nameTagMinions nameTag" id="ntdarkWizard"></div>
+            <div class="nameTagMinions nameTag" id="ntdarkGrunt"></div>
+            <div class="nameTagMinions nameTag" id="ntdarkDog"></div>
+
+
+
+
+
+
+
+ <div class="commander light-mins allMins" id="lightCommander">
+        <div class='lightCommanderDD' data-mid='lightCommander'></div>
+ </div>
+<div class="light-mins allMins" id="lightArcher">
+        <div class='lightArcherDD' data-mid='lightArcher'></div>
+</div>
+<div class="light-mins allMins" id="lightSoldier">
+         <div class='lightSoldierDD' data-mid='lightSoldier'></div>
+</div>
+<div class="light-mins allMins" id="lightDog">
+        <div class='lightDogDD' data-mid='lightDog'></div>
+</div>
+
+<div class="commander dark-mins allMins" id="darkCommander">
+        <div class='darkCommanderDD' data-mid='darkCommander'></div>
+</div>
+<div class="dark-mins allMins" id="darkWizard">
+        <div class='darkWizardDD' data-mid='darkWizard'></div>
+</div>
+<div class="dark-mins allMins" id="darkGrunt">
+        <div class='darkGruntDD' data-mid='darkGrunt'></div>        
+</div>
+<div class="dark-mins allMins" id="darkDog">
+        <div class='darkDogDD' data-mid='darkDog'></div>  
+</div>
+</div>
+
+        <div class="cardContainer" id="wrapper-cards">
+                  <div class = "cards" id="card1"></div>
+                        <div class = "cards" id="card2"></div>
+                        <div class = "cards" id="card3"></div>
+            <div id="bg1"></div>
+
+<div id="menuBtn">
+    <img src="img/but_options.svg" alt="btn"/>
+</div>
+            
+<div id="endTurnBtn">
+    <img src="img/endTurnButton.svg" alt="btn"/>
+</div>
+
+        <div id="menuContainer">
+            <div id="back7">
+                <img src="img/but_back.svg" alt="logo"/>
+            </div>
+            <div id="exitGame">
+                <img src="img/exitGameButton.svg" alt="logo"/>
+            </div>
+        <div class="menuContBg">Paused</div>
+    </div>
+    </div>
+</section>
+
+<!-- </div> -->
+
+<!-- <div class=attackSpSh></div>
+<div class=attackUpSpSh></div>
+<div class=healthUpSpSh></div> -->
+
+    
+
+</body>
+<script src="js/app.js"></script>
+</html>
